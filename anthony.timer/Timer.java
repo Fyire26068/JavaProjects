@@ -1,4 +1,4 @@
-package anthony.timer;
+//package anthony.timer;
 //imports
 import java.util.Calendar;
 import java.awt.Toolkit;
@@ -20,7 +20,7 @@ public class Timer{
 			Calendar time = Calendar.getInstance();
 			int check = time.compareTo(x);
 			if (check == 0){
-				Runnable sound1 = (Runnable)Toolkit.getDefaultToolkit().getDesktopProperty("win.sound.default");
+				Runnable sound1 = (Runnable)Toolkit.getDefaultToolkit().getDesktopProperty("win.sound.question");
 				sound1.run();
 				
 				x = Calendar.getInstance();
